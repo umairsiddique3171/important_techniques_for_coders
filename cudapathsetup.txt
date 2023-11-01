@@ -1,0 +1,25 @@
+export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/bin:$PATH"
+export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.0/extras/CUPTI/libx64:$PATH"
+export PATH="/c/tools/cuda/bin:$PATH"
+
+conda install -y jupyter
+conda create -y --name tensorflow python=3.9
+conda activate tensorflow (/conda deactivate for deactivation)
+conda install ipykernel
+python -m ipykernel install --user --name tensorflow --display-name "Python 3.9 (tensorflow)"
+pip install tensorflow
+print(tf.__version__)
+print(len(tf.config.list_physical_devices('GPU'))>0)
+
+C:\Users\US593\anaconda3
+C:\Users\US593\anaconda3\Library\mingw-w64\bin
+C:\Users\US593\anaconda3\Library\usr\bin
+C:\Users\US593\anaconda3\Library\bin
+C:\Users\US593\anaconda3\Scripts
+
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\bin
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\extras\CUPTI\lib64
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\extras\CUPTI\include
+C:\tools\cudnn-windows-x86_64-8.3.1.22_cuda11.5-archive\bin
+
+https://developer.nvidia.com/rdp/cudnn-archive

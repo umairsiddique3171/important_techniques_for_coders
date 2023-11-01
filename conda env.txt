@@ -1,0 +1,1 @@
+conda create -n environment_name python=python_version
