@@ -1,0 +1,63 @@
+git config --global user.name "username"   ---to config username
+git config --global user.email "useremail"   ---to config useremail
+git config --list   ---to see config
+
+git clone link   ---to clone the repo from given link
+git status   --- to see git current status
+
+untracked   ---new file
+modified   ---changed file
+staged   ---added file (i.e. ready to commit)
+unmodified   ---committed file
+
+git add filename   ---add file with given file name (i.e. making file ready to commit)
+git add .   ---add all files
+git commit -m "some message"   ---commit file with given message
+
+git push origin main   ---transfer files from local to remote
+
+to show hidden files in cmd : dir /a:h   ---to show hidden files on windows
+
+git init   ---initialize the folder as git repo
+git add filename   ---adding file on current repo
+git commit -m "some message"   ---committing file with given message
+git remote add origin <link>   ---adding given link as origin.Also you can put any name instead of origin
+git remote -v   ---to check remote origin
+git branch   ---to check the current branch
+git branch -M main   ---to rename the current branch as main
+git push origin main 
+
+git push -u origin main -> git push
+
+Workflow for local git : git_repo -> clone -> changes -> add -> commit -> push
+
+git branch   
+git branch -M main
+git checkout -b <new branch name>   ---to create the new branch with given name
+git checkout <branch name>   ---to set the given branch as current branch
+git branch -d <branch name>   ---to delete the given branch
+
+Forexample : working with branches
+git branch
+git branch -M main 
+git checkout -b feature1
+	any changes
+git add .
+git commit -m 'some message'
+git push origin feature1
+
+git diff <branch name>   ---to compare current branch with given branch
+git merge <branch name>   ---to merge current branch with given branch
+
+git pull origin main   ---used to fetch and download content from a remote repo and immediatedly update the local repo to match that content
+
+git reset <filename>   ---undoing change in given file if change in that is added
+git reset   ---undoing change in all files if changes in all files are added
+git reset HEAD~1   ---undoing change in all files if changes in all files are committed
+git reset <commit hash>   ---undoing change in all files till specific commit
+git reset --hard <commit hash>   ---typically undoing change in all files till specific commit
+
+git log   ---shows history of all files
+
+pull request   ---request sent to merge changes you did on a repo
+fork  ---fork is a rough copy
